@@ -12,7 +12,10 @@
     <link href="client/css/main.css" rel="stylesheet">
     <link href="client/css/responsive.css" rel="stylesheet">
     <link href="client/css/custom.css" rel="stylesheet">
-
+<!--[if lte IE 8]>
+    <script type="text/javascript" src="client/js/ie8.polyfil.min.js"></script>
+<![endif]-->
+    
     <!--[if lt IE 9]>
         <script src="client/js/html5shiv.js"></script>
         <script src="client/js/respond.min.js"></script>
@@ -99,7 +102,25 @@
 
                     <p>The network includes members from all over the country who attended our <a href="http://incubatenergy.org/blog-workshop.html">February 2015 kickoff workshop</a> in Washington D.C., including the <a href="http://ati.utexas.edu/">Austin Technology Incubator (ATI)</a>, <a href="http://www.cleanenergytrust.org/">Clean Energy Trust (CET)</a> in Chicago, <a href="http://cltjoules.com/">CLT Joules</a> in Charlotte, the <a href="http://www.energyexcelerator.com/">Energy Excelerator</a> from Hawaii, <a href="http://greentownlabs.org/">Greentown Labs</a> from Boston, the <a href="http://laincubator.org/">Los Angeles Cleantech Incubator (LACI)</a> in California, <a href="http://www.nextenergy.org/">NextEnergy</a> in Detroit, <a href="http://www.nycacre.com/">NYC Acre</a> in the northeast, <a href="http://oregonbest.org/">Oregon BEST</a> in the Pacific Northwest, and <a href="http://prospectsv.org/">Prospect Silicon Valley</a> in the Bay Area. </p>
                 <div class="col-sm-12" style="margin-bottom:2em;">
-                    <img src="assets/images/map-incubatenergy-network.jpg" class="img-responsive center-block" alt="Map of United States indicating locations of network locations.">
+                    <img src="assets/images/map-incubatenergy-network.jpg" alt="Map of United States indicating locations of network locations." usemap="#Map" class="img-responsive center-block">
+                    <map name="Map">
+                      <area shape="rect" coords="57,44,187,113" href="http://oregonbest.org/" alt="Oregon Best">
+                      <area shape="rect" coords="14,146,163,197" href="http://www2.cleantechopen.org/" alt="Clean Tech Open">
+                      <area shape="rect" coords="173,222,253,325" href="http://laincubator.org/" alt="LACI">
+                      <area shape="rect" coords="23,300,154,426" href="http://www.energyexcelerator.com/" alt="Energy Excelerator">
+<area shape="rect" coords="185,150,347,195" href="http://www.nrel.gov" alt="NREL">
+<area shape="poly" coords="380,309,424,344,415,352,422,392,574,399,571,353,468,344,424,297,380,308" href="http://ati.utexas.edu/" alt="Austin Technology Incubator">
+<area shape="rect" coords="18,205,155,254" href="http://prospectsv.org/" alt="Prospect Silicon Valley">
+                      <area shape="poly" coords="615,145,646,185,650,230,705,234,705,176,659,172,639,137,616,145" href="http://www.nycacre.com/" alt="ACRE">
+                      <area shape="poly" coords="667,315,545,319,546,288,587,285,557,246,570,234,622,284,657,286,667,315" href="http://cltjoules.com/" alt="CLT Joules">
+                      <area shape="poly" coords="660,95,670,31,713,32,712,4,575,5,575,30,646,30,658,96" href="http://greentownlabs.org/" alt="Greentown Labs">
+                      <area shape="poly" coords="553,34,644,38,646,56,655,116,646,114,625,69,556,67,553,35" href="http://www.masscec.com/" alt="Massachusetts Clean Energy Center">
+                      <area shape="poly" coords="598,74,505,71,504,95,598,103,631,120,634,108,599,74" href="#" alt="Navigate">
+                      <area shape="poly" coords="341,36,453,36,460,62,556,152,527,157,443,73,343,70,341,34" href="http://www.nextenergy.org/" alt="NextEnergy">
+                      <area shape="poly" coords="357,80,424,82,513,162,489,164,432,120,423,134,361,134,362,87" href="http://www.cleanenergytrust.org/" alt="Clean Energy Trust">
+                      <area shape="rect" coords="364,141,456,178" href="http://www.energyfoundry.com/" alt="Energy Foundry">
+                      <area shape="rect" coords="391,216,550,253" href="#" alt="EPRI">
+                  </map>
                 </div>
 
                     <p>The <a href="http://www.necec.org/">New England Clean Energy Council (NECEC)</a> helps coordinate, along with <a href="http://www.masscec.com/">MassCEC</a> in Massachusetts, clean energy  resources in the Northeast. The <a href="http://www2.cleantechopen.org/">Cleantech Open</a> has regional chapters all over the country, and the <a href="http://www.energyfoundry.com/">Energy Foundry</a> in Chicago is a venture capital firm focusing on clean energy investments.</p>
@@ -138,5 +159,12 @@
     <script src="client/js/lightbox.min.js"></script>
     <script src="client/js/wow.min.js"></script>
     <script src="client/js/main.js"></script>
+    <script src="client/js/imageMapResizer.min.js"></script>
+
+	<script type="text/javascript">
+
+		$('map').imageMapResize();
+
+	</script>
 </body>
 </html>
