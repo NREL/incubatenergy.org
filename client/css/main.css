@@ -26,13 +26,13 @@
 
 
   a{
-    color:#C03035;
+    color:#19616a;
   }
 
   a:hover {
     outline: none;
     text-decoration:none;
-    color:#4fcccd;
+    color:#19616a;
   }
 
   a:focus {
